@@ -63,7 +63,7 @@ body {
   cursor: pointer;
 }
 
-.btn {
+.custom_btn {
   padding: 30px 0;
   display: inline-block;
   background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
@@ -75,8 +75,22 @@ body {
   font-size: 35px;
   border: none;
 }
-.btn:hover {
+.custom_btn:hover {
   color: #eef1f5;
   transition: 0.3s ease;
   transform: rotate(360deg);
+}
+
+.heading_typo {
+  position: relative;
+}
+.heading_typo::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background: red;
+  line-height: 30px;
+  border-radius: 20px;
+  top: 30%;
+  left: 20%;
 }/*# sourceMappingURL=style.css.map */

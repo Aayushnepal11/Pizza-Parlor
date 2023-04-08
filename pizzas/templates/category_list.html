@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<h1 class="display-3 text-center">Category Page</h1>
+{% for topping in toppings %}
+<div class="card m-2">
+  <span class="card-title text-primary text-center">{{ topping.name }}</span>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{% static 'image/background.jpg' %}" style="width: 100%" ; />
+      </div>
+      <div class="col-md-5">
+        <p class="text-primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam.
+          Maiores eligendi, aliquid quaerat hic quidem quam ea! Mollitia, minus.
+        </p>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-primary" href="#">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endfor %} {% endblock content %}
+</div>

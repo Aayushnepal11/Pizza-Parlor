@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3 class="display-4 text-center heading_typo"> &laquo; See the Pizza List Below &raquo;</h3>
+   <div class="row">
+    {% for list in pizza %}
+            <div class="col-md-4">
+                <div class="card">
+                    <p class="h3 text-danger">on the category <span class="badge text-bg-secondary">{{list}}</span></p>
+                    <div class="d-flex justify-content-center m-2">
+                        <a class="btn btn-danger" href="{% url 'pizzas:pizza_category' list.pk %}">{{list}}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+{% endblock content %}
