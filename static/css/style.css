@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+body {
+  font-size: 24px;
+  color: #fff;
+  background: url("../image/background.jpg"), linear-gradient(to left, rgba(0, 0, 1, 0.5), rgba(1, 1, 1, 0.7));
+  background-position: bottom;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar .d-flex {
+  justify-content: center;
+  flex: 1;
+}
+.navbar .navbar-brand {
+  display: flex;
+  color: #fff;
+  flex: 1;
+  justify-content: center;
+  font-size: 30px;
+}
+.navbar .active {
+  border: #bbb;
+  background-color: #218dc7;
+  color: #fff !important;
+  transition: 0.5s ease-in-out;
+}
+.navbar .active:hover {
+  border: #bbb;
+  background-color: #218dc7;
+  color: #fff !important;
+  transition: 0.5s ease-in-out;
+}
+.navbar .nav-item {
+  margin-left: 20px;
+}
+.navbar .nav-item .nav-link {
+  color: #e4efe9;
+  font-size: 30px;
+}
+.navbar .nav-item .nav-link:hover {
+  border: #bbb;
+  background-color: #218dc7;
+  color: #fff !important;
+  transition: 0.5s ease-in-out;
+}
+
+.display-5 {
+  margin-top: 20px;
+}
+
+.custom {
+  color: #101;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.custom .card-body img {
+  width: 100%;
+  vertical-align: middle !important;
+}
+.custom .card-body img:hover {
+  opacity: 0.8;
+  filter: blur(5%);
+  cursor: pointer;
+}
+
+.btn {
+  padding: 30px 0;
+  display: inline-block;
+  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s ease-in;
+  width: 250px;
+  line-height: 30px;
+  font-size: 35px;
+  border: none;
+}
+.btn:hover {
+  color: #eef1f5;
+  transition: 0.3s ease;
+  transform: rotate(360deg);
+}/*# sourceMappingURL=style.css.map */

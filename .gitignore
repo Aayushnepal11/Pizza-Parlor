@@ -1,0 +1,5 @@
+*.sqlite3
+*.scss
+*.css.map
+p_env
+__pycache__
