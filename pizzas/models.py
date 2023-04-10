@@ -3,7 +3,7 @@ from uuid import uuid4
 # Create your models here.
 
 class Pizza(models.Model):
-    id = models.IntegerField(primary_key=uuid4, editable=False)
+    id = models.IntegerField(primary_key=uuid4, editable=False, unique=True)
     name = models.CharField(max_length=150)
 
     class Meta:

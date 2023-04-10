@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from django.views.generic import TemplateView, View, ListView
+from django.views.generic import TemplateView, View, ListView, DetailView
 from .models import Pizza, Toppings
 # Create your views here.
 class HomePageView(TemplateView):
@@ -16,7 +16,7 @@ class ListPageView(ListView):
         return context
     
 
-class CategoryPageView(View):
+class CategoryPageView(DetailView):
     def get(self, request, pk):
         pizza = Pizza.objects.get(id=pk)
         topping = pizza.pizza.all()
